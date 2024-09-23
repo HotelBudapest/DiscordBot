@@ -18,6 +18,7 @@ async def main():
     try:
         print("Attempting to load cogs...")
         await client.load_extension('cogs.music')
+        await client.load_extension('cogs.toss')
     except Exception as e:
         print(f"Error loading cogs: {e}")
 
